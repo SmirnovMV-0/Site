@@ -36,10 +36,66 @@
         <section>
             <h3>Форма для связи</h3>
             <form action="#" method="get" id="form">
-                <div>Ваше имя:</div>
-                <div><input></div>
+                <fieldset>
+                    <div>
+                        <label>Ваше имя:</label>
+                        <input type="text" placeholder="Введите ФИО">
+                    </div>
+                    <div>
+                        <label>Адрес почты:</label>
+                        <input type="email">
+                    </div>
+                    <div>
+                        <label>Номер телефона:</label>
+                        <input type="tel">
+                    </div>
+                    <div>
+                        <label>Дата встречи:</label>
+                        <input type="date" value="Дата">
+                    </div>
+                    <div>
+                        <label>Введите URL-адрес:</label>
+                        <input type="url">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Добавить способ ответа:</legend>
+                    <label><input type="radio" name="svaz" id="meet" value="Встреча">Назначить встречу</label><br>
+                    <label><input type="radio" name="svaz" id="tele" value="Телефон">Телефон</label><br>
+                    <label><input type="radio" name="svaz" id="other" value="Другое">Другое</label><br>
+                    <label><input type="radio" name="svaz" id="no-answer" value="Не отвечать">Не надо отвечать</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Что по учёбе?</legend>
+                    <label><input type="checkbox" name="study" id="help" value="Помощь">Нужна помощь</label><br>
+                    <label><input type="checkbox" name="study" id="colab" value="Сотрудничество">Сотрудничество</label><br>
+                    <label><input type="checkbox" name="study" id="answers" value="Ответы">Ответы и готовые задания</label><br>
+                    <label><input type="checkbox" name="study" id="session" value="Сессия">Подготовка к сессии</label><br>
+                </fieldset>
+
+                <section>
+                    <div>Ваше сообщение:</div>
+                    <div>
+                        <textarea cols="40" rows="10" placeholder="Введите вопрос или предложение">
+                        </textarea>
+                    </div>
+                </section>
+
+                <div class="align-center">
+                    <input type="submit" value="Отправить" class="input-text">
+                    <input type="reset" value="Очистить форму" class="input-text">
+                </div>
             </form>
         </section>
+
+        <footer id="2">
+            <ul align="left" type="square">
+                <li>Сайт Максима</li>
+            </ul>
+        </footer>
+        <aside> </aside>
 
     </main>
     

@@ -3,6 +3,8 @@ body{
     padding: 0px;
     max-width: 1700px;
     margin: auto;
+    display:flex;
+    flex-direction: column;
 }
 header{
     background-color: #e2d848;
@@ -48,4 +50,15 @@ table{
 }
 .wrapper{
     
+}
+.align-center{
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    max-width:50vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
 }
