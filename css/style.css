@@ -64,10 +64,25 @@ form{
     flex-direction: column;
     justify-content: center;
 }
-.main1{
+.main0{
     background-color: var(--element-color);
     display:grid;
     grid-template-columns: repeat(2,1Fr);
     align-content: center;
     text-align: left;
+}
+.main2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+.main2_el{
+    margin-right:10px;
+}
+.font{
+    font-family: stylesheet;
+}
+.stylesheet{
+    font-family: 'Sofia+Sans', sans-serif;
 }
