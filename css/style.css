@@ -5,6 +5,8 @@ body{
     margin: auto;
     display:flex;
     flex-direction: column;
+
+    --element-color: yellow;
 }
 header{
     background-color: #e2d848;
@@ -61,4 +63,11 @@ form{
     display:flex;
     flex-direction: column;
     justify-content: center;
+}
+.main1{
+    background-color: var(--element-color);
+    display:grid;
+    grid-template-columns: repeat(2,1Fr);
+    align-content: center;
+    text-align: left;
 }
