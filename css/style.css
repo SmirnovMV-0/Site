@@ -86,3 +86,6 @@ form{
 .stylesheet{
     font-family: 'Sofia+Sans', sans-serif;
 }
+.hidden{
+    display: none;
+}

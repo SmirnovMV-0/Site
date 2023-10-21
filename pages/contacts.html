@@ -6,6 +6,7 @@
     <title>Сайт</title>
     <link rel="icon" href="../Images/maple.png">
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/form_script.js" defer></script>
 </head>
 <body>
     <header>
@@ -37,23 +38,23 @@
             <h3>Форма для связи</h3>
             <form action="#" method="get" id="form">
                 <fieldset>
-                    <div>
+                    <div id="_Name">
                         <label>Ваше имя:</label>
                         <input type="text" placeholder="Введите ФИО">
                     </div>
-                    <div>
+                    <div id="_Email">
                         <label>Адрес почты:</label>
                         <input type="email">
                     </div>
-                    <div>
+                    <div id="_Tel">
                         <label>Номер телефона:</label>
                         <input type="tel">
                     </div>
-                    <div>
+                    <div id="_Date">
                         <label>Дата встречи:</label>
                         <input type="date" value="Дата">
                     </div>
-                    <div>
+                    <div id="_Url">
                         <label>Введите URL-адрес:</label>
                         <input type="url">
                     </div>
@@ -61,13 +62,31 @@
 
                 <fieldset>
                     <legend>Добавить способ ответа:</legend>
-                    <label><input type="radio" name="svaz" id="meet" value="Встреча">Назначить встречу</label><br>
-                    <label><input type="radio" name="svaz" id="tele" value="Телефон">Телефон</label><br>
-                    <label><input type="radio" name="svaz" id="other" value="Другое">Другое</label><br>
-                    <label><input type="radio" name="svaz" id="no-answer" value="Не отвечать">Не надо отвечать</label>
+
+                    <label><input type="radio" name="svaz" id="meet" value="meet_">Назначить встречу</label><br>
+                    <label><input type="radio" name="svaz" id="tele" value="tel_">Телефон</label><br>
+                    <label><input type="radio" name="svaz" id="email" value="email_">Почта</label><br>
+                    <label><input type="radio" name="svaz" id="other" value="other_">Другое</label><br>
+                    <label><input type="radio" name="svaz" id="no-answer" value="none_">Не надо отвечать</label><br>
+
+                    <select id="locationSelect">
+                        <option>
+                            <label>Работа</label>
+                        </option>
+                        <option value="study_select">
+                            <label>Учёба</label>
+                        </option>
+                        <option>
+                            <label>Личное</label>
+                        </option>
+                        <option>
+                            <label>Другое</label>
+                        </option>
+                    </select>
+                    
                 </fieldset>
 
-                <fieldset>
+                <fieldset id="_Study">
                     <legend>Что по учёбе?</legend>
                     <label><input type="checkbox" name="study" id="help" value="Помощь">Нужна помощь</label><br>
                     <label><input type="checkbox" name="study" id="colab" value="Сотрудничество">Сотрудничество</label><br>
