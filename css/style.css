@@ -111,8 +111,13 @@ form{
   max-height: 256px;
 }
 .slider_prev{
-
+    margin: 0.5px;
 }
 .slider_next{
-
+    margin: 0.5px;
+}
+.center_but{
+    display:flex;
+    justify-content: center;
+    margin: 5px;
 }
