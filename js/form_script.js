@@ -17,38 +17,37 @@ Study.classList.add('hidden');
 
 for(let i = 0; i<contactRadio.length;i++){
     contactRadio[i].addEventListener('change', function(){
-        print('asdasdasd');
         switch(this.value){
-            case 'meet_':
-                Email.classList.add('hidden');
-                Tel.classList.add('hidden');
-                Datee.classList.remove('hidden');
-                Url.classList.add('hidden');
-                break;
-            case 'tel_':
-                Email.classList.add('hidden');
-                Tel.classList.remove('hidden');
-                Datee.classList.add('hidden');
-                Url.classList.add('hidden');
-                break;
-            case 'email_':
-                Email.classList.remove('hidden');
-                Tel.classList.add('hidden');
-                Datee.classList.add('hidden');
-                Url.classList.add('hidden');
-                break;
-            case 'other_':
-                Email.classList.add('hidden');
-                Tel.classList.add('hidden');
-                Datee.classList.add('hidden');
-                Url.classList.remove('hidden');
-                break;
-            case 'none_':
-                Email.classList.add('hidden');
-                Tel.classList.add('hidden');
-                Datee.classList.add('hidden');
-                Url.classList.add('hidden');
-                break;
+          case 'meet_':
+              Email.classList.add('hidden');
+              Tel.classList.add('hidden');
+              Datee.classList.remove('hidden');
+              Url.classList.add('hidden');
+              break;
+          case 'tel_':
+              Email.classList.add('hidden');
+              Tel.classList.remove('hidden');
+              Datee.classList.add('hidden');
+              Url.classList.add('hidden');
+              break;
+          case 'email_':
+              Email.classList.remove('hidden');
+              Tel.classList.add('hidden');
+              Datee.classList.add('hidden');
+              Url.classList.add('hidden');
+              break;
+          case 'other_':
+              Email.classList.add('hidden');
+              Tel.classList.add('hidden');
+              Datee.classList.add('hidden');
+              Url.classList.remove('hidden');
+              break;
+          case 'none_':
+              Email.classList.add('hidden');
+              Tel.classList.add('hidden');
+              Datee.classList.add('hidden');
+              Url.classList.add('hidden');
+              break;
         }
     });
 }
@@ -60,4 +59,3 @@ locationSelect.addEventListener('change', function(){
         Study.classList.add('hidden');
     }
 });
-

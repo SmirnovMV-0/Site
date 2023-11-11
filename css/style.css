@@ -51,7 +51,7 @@ table{
     min-height: 100vh;
 }
 .wrapper{
-    
+
 }
 .align-center{
     display: flex;
@@ -88,4 +88,31 @@ form{
 }
 .hidden{
     display: none;
+}
+
+.container{
+  display:flex;
+  justify-content: center;
+}
+.slider_line{
+  display:flex;
+  max-height: 256px;
+  position:relative;
+  left: 0;
+}
+.slider{
+  max-width: 256px;
+  max-height: 256px;
+  overflow: hidden;
+}
+.mini{
+  max-width: 256px;
+  min-width: 256px;
+  max-height: 256px;
+}
+.slider_prev{
+
+}
+.slider_next{
+
 }
